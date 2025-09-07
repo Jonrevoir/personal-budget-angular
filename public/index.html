@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
+    <!-- SEO Change
+     Changed "budger to budget in description"-->
+    <meta name="description" content="A free personal budget app">
     <meta name="keywords" content="app free budget finance">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
+    <!-- SEO Change
+     I have added a favicon placeholder for the site-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 <a href="#main" class="skip">Skip to content</a>
 
-    <nav>
+    <!-- A11y Change
+     Added role and aria-label to classes -->
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
@@ -27,12 +34,16 @@
         <h2>A personal-budget management app</h2>
     </div>
 
-    <main class="center" id="main">
+    <main class="center" id="main" role="main">
 
-        <div class="page-area">
+        <!-- Semantic HTML Change 
+         Changed <div> to <section> -->
+    <section class="page-area">
 
             <article>
-                <h1>Stay on track</h1>
+                <!--S Sematic HTML Change
+                Changed repeating <h1> into <h2>-->
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -41,14 +52,14 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -57,14 +68,14 @@
             </article>
     
             <article>
-                <h1>Free</h1>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </article>
     
             <article>
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -73,14 +84,14 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -89,17 +100,25 @@
             </article>
     
             <article>
-                <h1>Chart</h1>
-                <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                </p>
+                <h2>Chart</h2>
+                <!-- Semantic HTML Change
+                Wrapped <canvas> with <figure> and <figcaption> for accessiblity-->
+                <!-- SEO Change
+                Also added alt text here for the chart-->
+                <!-- A11y Change
+                 added aria-label to chnart-->
+                <figure>
+
+                    <canvas id="myChart" width="400" height="400"> aria-label="Pie chart showing your spending breakdown" Here is your myChart</canvas>
+                    <figcaption>Here is your myChart</figcaption>
+                </figure>
             </article>
 
-        </div>
+    </section>
 
     </main>
 
-    <footer class="bottom">
+    <footer class="bottom" role="contentinfo">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
