@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'pb-hero',
+  selector: 'pb-breadcrumbs',
   imports: [RouterModule],
-  templateUrl: './hero.html',
-  styleUrl: './hero.scss'
+  templateUrl: './breadcrumbs.html',
+  styleUrl: './breadcrumbs.scss'
 })
-export class Hero {
+export class Breadcrumbs {
 
 }
