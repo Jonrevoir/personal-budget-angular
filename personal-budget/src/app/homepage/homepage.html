@@ -1,0 +1,44 @@
+<main class="center" id="main" role="main">
+
+        <!-- Semantic HTML Change 
+         Changed <div> to <section> -->
+    <section class="page-area">
+
+            <pb-article
+            [title]="'Stay on track'"
+            [content]="'Do you know where you are spending your money? If you really stop to track it down, you would get surprised! Proper budget management depends on real data... and this app will help you with that!'">
+            </pb-article>
+
+            <pb-article
+            [title]="'Alerts'"
+            [content]="'What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.'">
+            </pb-article>
+    
+            <pb-article
+            [title]="'Results'"
+            [content]="'People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    because they know it is all good and accounted for.'">
+            </pb-article>
+
+            <pb-article
+            [title]="'Free'"
+            [content]="'This app is free!!! And you are the only one holding your data!'">
+            </pb-article>
+    
+            <article>
+                <h2>Chart</h2>
+                <figure>
+                    <canvas id="myChart" width="400" height="400" aria-label="Pie chart showing your spending breakdown">Here is your myChart</canvas>
+                    <figcaption>Here is your myChart</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h2>Try Another Graph!</h2>
+                <button class="randomize">New Graph!</button>
+                <div id="d3-chart"></div>
+            </article>
+
+    </section>
+
+    </main>
